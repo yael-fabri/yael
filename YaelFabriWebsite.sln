@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36616.10 d17.14
+VisualStudioVersion = 17.14.36616.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YaelFabriWebsite", "YaelFabriWebsite\", "{E487D4AE-CD66-8337-774B-47CEFD475F9E}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -23,6 +23,12 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YaelFabriWebsite", "YaelFab
 		VWDPort = "56094"
 		SlnRelativePath = "YaelFabriWebsite\"
 		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		HTMLPage1.html = HTMLPage1.html
+		TextFile1.txt = TextFile1.txt
 	EndProjectSection
 EndProject
 Global

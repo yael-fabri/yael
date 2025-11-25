@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body dir="rtl"background-color: pink">
+        <table border="1" style="width: 90%; height: 600px">
+  <tr>
+    <th colspan="2">Yael fabri</th>
+    
+  </tr>
+  <tr>
+
+    <td> 
+        <a href="Home.aspx"><img src="photos/תמונה5.png" /></a>
+    <br/> <a href="Login.aspx"><img src="photos/תמונה7.png" /></a>
+       <br />  <a href="entry.aspx"><img src="photos/תמונה8.png" /></a>
+   <br />
+        <a href="mayda.aspx"><img src="photos/תמונה6.png" /></a>
+
+    </td>
+    <td>
+
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </td>
+    
+  </tr>
+</table>
+
+
+
+
+    
+</body>
+</html>
