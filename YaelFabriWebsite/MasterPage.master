@@ -8,10 +8,12 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body dir="rtl"background-color: pink">
-        <table border="1" style="width: 90%; height: 600px">
+<body dir="rtl" style="background-color: pink;">
+
+        <table border="1" style="width: 900px; height: 600px; margin: auto;">
+
   <tr>
-    <th colspan="2">Yael fabri</th>
+    <th colspan="2"> Movies</th>
     
   </tr>
   <tr>
