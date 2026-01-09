@@ -1,45 +1,59 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Movies</title>
+
+    <!-- CSS -->
+    <style>
+        .menuImage {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
+
 <body dir="rtl" style="background-color: pink;">
 
-        <table border="1" style="width: 900px; height: 600px; margin: auto;">
+    <table border="1" style="width: 900px; height: 600px; margin: auto;">
+        <tr>
+            <th colspan="2">Movies</th>
+        </tr>
 
-  <tr>
-    <th colspan="2"> Movies</th>
-    
-  </tr>
-  <tr>
+        <tr>
+            <!-- תפריט צד -->
+            <td style="width: 200px; text-align: center;">
+                <a href="Home.aspx">
+                    <img src="photos/תמונה5.png" class="menuImage" />
+                </a><br />
 
-    <td> 
-        <a href="Home.aspx"><img src="photos/תמונה5.png" /></a>
-    <br/> <a href="Login.aspx"><img src="photos/תמונה7.png" /></a>
-       <br />  <a href="entry.aspx"><img src="photos/תמונה8.png" /></a>
-   <br />
-        <a href="mayda.aspx"><img src="photos/תמונה6.png" /></a>
+                <a href="Login.aspx">
+                    <img src="photos/תמונה7.png" class="menuImage" />
+                </a><br />
 
-    </td>
-    <td>
+                <a href="entry.aspx">
+                    <img src="photos/תמונה8.png" class="menuImage" />
+                </a><br />
 
-        
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
+                <a href="mayda.aspx">
+                    <img src="photos/תמונה6.png" class="menuImage" />
+                </a>
+            </td>
 
-    </td>
-    
-  </tr>
-</table>
+            <!-- תוכן משתנה -->
+            <td>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
 
-
-
-
-    
 </body>
 </html>
