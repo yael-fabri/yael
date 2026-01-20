@@ -1,29 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
-public partial class _Default : System.Web.UI.Page
+public partial class Login : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+    }
 
-    }
-}
-public partial class Login : System.Web.UI.Page
-{
-    protected void Page_Load(object sender, EventArgs e)
+    protected void btnSubmit_Click(object sender, EventArgs e)
     {
-        if (IsPostBack)
-    {
-       firstname = Request.Form["firstname"];
-        lastname = Request.Form["lastname"];
-         email = Request.Form["email"];
-         age = Request.Form["age"];
-         movie = Request.Form["movie"];
-    }
+        string firstname = txtFirstName.Text;
+        string lastname = txtLastName.Text;
+        string email = txtEmail.Text;
+        string movie = txtMovie.Text;
+
+        string pass = txtEmail.Text;
+
+        int age;
+        int.TryParse(txtAge.Text, out age);
+
+        lblResult.Text =
+            "שלום " + firstname + " " + lastname +
+            "<br />אימייל: " + email +
+            "<br />גיל: " + age +
+            "<br />סרט אהוב: " + movie;
 
     }
 }
