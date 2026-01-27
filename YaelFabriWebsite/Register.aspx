@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
     <h1>הרשמה</h1>
-    <form runat="server" method="post" />
+    <form runat="server" method="post" >
     <p>
         שם פרטי:
         <input type="text" id="firstname" name="firstname" />
@@ -42,5 +42,6 @@
     <input type="submit" value="שליחה" />
 
     </form>
+    <%=strResult %>
 </asp:Content>
 

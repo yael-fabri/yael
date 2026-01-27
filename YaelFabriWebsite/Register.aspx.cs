@@ -8,10 +8,11 @@ using System.Web.UI.WebControls;
 
 public partial class Register : System.Web.UI.Page
 {
-    public string firstname;
+    public string strResult;
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        Response.Write("LLL");
     
         if (IsPostBack)
         {
@@ -24,14 +25,13 @@ public partial class Register : System.Web.UI.Page
 
 
             string sqlinsert = "INSERT INTO tUsers (firstname, lastname, email, password, age, movie) " +
-                    "VALUES ('" + firstname + "','" + lastname + "','" + email + "','" + password + "','" + age + "','" + movie + "')";
-
+                    "VALUES (N'" + firstname + "',N'" + lastname + "',N'" + email + "',N'" + password + "','" + age + "',N'" + movie + "')";
 
 
 
             MyAdoHelper.DoQuery("MYDB.mdf", sqlinsert);
 
-            string = "נרשמת בהצלחה!";
+            strResult = "נרשמת בהצלחה!";
 
 
             //lastname = Request.Form["lastname"];
